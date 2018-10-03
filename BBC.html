@@ -1,0 +1,415 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Technology - BBC News</title>
+
+  <style type="text/css">
+  #topBar {
+    height: 40px;
+    margin: 0 auto;
+    width: 1080px;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+  }
+
+  #logo {
+    width: 84px;
+    height: 24px;
+    margin: 8px 8px 0px 0px;
+    float: left;
+  }
+
+  .borders {
+    float: left;
+    height: 100%;
+    border-left: 1px #B4B4B4 solid;
+    margin-right: 8px;
+  }
+
+  #signIn {
+    width: 30px;
+    height: 25px;
+    float: left;
+    margin: 8px 0px 0px 8px;
+  }
+
+  #text {
+    position: relative;
+    top: 10px;
+    margin-left: 8px;
+    font-weight: bold;
+    padding-right: 50px;
+    text-decoration: none;
+    color: black;
+  }
+
+
+  #squiggle {
+    height: 40px;
+    float: left;
+  }
+
+  #bell {
+    height: 25px;
+    width: 25px;
+    margin: 8px 11px 0px 3px;
+
+  }
+
+  #bell-div {
+    float: left;
+  }
+
+  .menu {
+    font-weight: bold;
+    padding-top: 11px;
+    padding-left: 14px;
+    padding-right: 7px;
+    height: 29px;
+
+  }
+  #downArrow {
+    width: 20px;
+    height: 20px;
+    padding-left: 8px;
+    float: right;
+
+  }
+
+  #searchBox {
+    width: 150px;
+    margin-top: 8px;
+    margin-left: 8px;
+    font-weight: bold;
+    background-color: #E4E4E4;
+    border: none;
+    height: 20px;
+    float: left;
+    padding-left: 5px;
+  }
+
+  #search {
+    width: 23px;
+    height: 22px;
+    margin-top: 8px;
+
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  #bigMenuContainer {
+    background-color: #BB1919;
+    width: 100%;
+    height: 70px;
+  }
+
+  #menu-bar {
+    margin: 0 auto;
+    width: 1080px;
+
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    padding-top:10px;
+  }
+
+  #menu-div-container {
+    width: 100%;
+    background-color: #A91717;
+  }
+
+  #menu-div {
+    width: 1080px;
+    margin: 0 auto;
+    height: 40px;
+  }
+
+  #menu-div a {
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+    top: 9px;
+    color: white;
+    padding: 0px 8px 0px 5px;
+    border-right: 1px #BB4545 solid;
+  }
+
+  #menu-div a:hover {
+    text-decoration: underline;
+  }
+
+  .no-border {
+    border-right: none !important;
+  }
+
+  #downArrow2 {
+    height: 16px;
+    width: 18px;
+    position: relative;
+    top: 8px;
+  }
+
+  #page-container {
+    margin: 0 auto;
+    width: 1080px;
+  }
+
+  h2 {
+    color: #404040;
+    font-weight: normal;
+    border-bottom: 3px #BB1919 solid;
+    width: 120px;
+  }
+
+  h3 a {
+    color: #5A5A5F;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
+  h3 a:hover {
+    color: #1167A8;
+  }
+
+  #articleSummary {
+    color: #5A5A5A;
+    width: 260px;
+    float: left;
+    font-size: 15px;
+  }
+
+  .clock {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+  }
+
+  .technology {
+    color: #BB1919;
+    text-decoration: none;
+    border-left: 1px #CCCCCC solid;
+    padding-left: 8px;
+  }
+
+  #articleSummary a:hover{
+    color: #1167A8;
+  }
+
+  .date {
+    padding-right: 8px;
+  }
+
+  #article-container {
+    float: left;
+    width: 670px;
+    border-right: 1px #DBDBDB solid;
+    padding-right: 40px;
+  }
+
+  #image1 {
+    width: 400px;
+    height: 200px;
+    margin-left: 10px;
+  }
+
+  #hr {
+    width: 50px;
+    border-top: 1px #A91717 solid;
+  }
+
+  #quickLink {
+    color: #5A5A5A;
+    text-decoration: none;
+
+  }
+
+  #rightSide {
+    position: relative;
+    left: -30px;
+    width: 280px;
+    float: right;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .sideImage {
+    float: left;
+    width: 90px;
+    margin-right: 10px;
+  }
+
+  .rightSideLink {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+  }
+
+  .rightSideLink:hover{
+    color: #1167A8;
+  }
+
+  .sideArticle {
+    float: right;
+    width: 180px;
+    position: relative;
+    top:-18px;
+  }
+
+  .no-border {
+    border-left: none;
+    padding: 0;
+  }
+
+  .border-right {
+    border-right: 1px solid #cccccc;
+  }
+
+  .topLinks {
+    text-decoration: none;
+    color: black;
+  }
+
+</style>
+
+
+</head>
+<body>
+  <div id="topBar">
+    <a href=""><img id="logo" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\bbclogo.PNG" alt="BBC Logo"></a>
+
+    <div id="signInSection" class="borders">
+      <img id="signIn" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\bbcAngel.PNG" alt="BBC SignIn">
+      <a href="" id="text">Sign in</a>
+    </div>
+    <div id="bell-div">
+
+      <img id="squiggle" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\squiggle.PNG">
+      <img id="bell" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\bell.PNG">
+
+    </div>
+
+    <div class="borders menu">
+      <a class="topLinks" href="">News</a>
+    </div>
+    <div class="borders menu">
+      <a class="topLinks" href="">Sport</a>
+    </div>
+    <div class="borders menu">
+      <a class="topLinks" href="">Weather</a>
+    </div>
+    <div class="borders menu">
+      <a class="topLinks" href="">iPlayer</a>
+    </div>
+    <div class="borders menu">
+      <a class="topLinks" href="">TV</a>
+    </div>
+    <div class="borders menu">
+      <a class="topLinks" href="">Radio</a>
+    </div>
+    <div class="borders menu">
+      <a class="topLinks" href="">More</a>
+      <img id="downArrow" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\downarrow.PNG">
+    </div>
+    <div class="borders">
+      <input type="text" placeholder="Search" id="searchBox"></input>
+      <input type="image" id="search" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\search.PNG">
+    </div>
+    <a href=""></a>
+    <a href=""></a>
+  </div>
+
+  <div class="clear"></div>
+
+  <div id="bigMenuContainer">
+    <div id="menu-bar">
+
+      <h1>News</h1>
+
+    </div>
+  </div>
+
+  <div id="menu-div-container">
+    <div id="menu-div">
+
+      <a href="">Home</a>
+      <a href="">UK</a>
+      <a href="">World</a>
+      <a href="">Business</a>
+      <a href="">Politics</a>
+      <a href="">Tech</a>
+      <a href="">Science</a>
+      <a href="">Health</a>
+      <a href="">Family & Education</a>
+      <a href="">Entertainments & Arts</a>
+      <a href="">Stories</a>
+      <a class="no-border" href="">More</a>
+      <input type="image" id="downArrow2" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\whitedownarrow.PNG">
+    </div>
+
+  </div>
+
+  <div class="clear"></div>
+
+  <div id="page-container">
+
+    <h2>Technology</h2>
+    <div id="article-container">
+      <h3><a href="">Suspect code behind BA hack 'found'</a></h3>
+      <div id="articleSummary">
+        <p>The code, found lurking on the British
+          Airways website, may be how hackers stole
+          data on 380,000 transactions.</p>
+
+          <p><img class="clock" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\timer.PNG"></img><span class="date">11 September 2018</span><a class="technology" href="">Technology</a></p>
+          <hr id="hr"  align="left">
+
+          <p><a id="quickLink" href="">BA boss apologises for data breach</a></p>
+
+        </div>
+        <img id="image1" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\image1.PNG">
+      </div>
+
+      <div id="rightSide">
+
+        <h4>Watch/Listen</h4>
+
+        <a href=""><img class="sideImage" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\image2.PNG"></a>
+
+        <div class="sideArticle">
+          <p><a class="rightSideLink" href="">Security alarm 'smokes out' burglars</a></p>
+          <p><img class="clock" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\timer.PNG"><span class="date">11 September 2018</span><br><a class="technology no-border" href="">Technology</a></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <a href=""><img class="sideImage" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\image3.PNG"></a>
+
+        <div class="sideArticle">
+          <p><a class="rightSideLink" href="">Would you know a Sega from a Nintendo?</a></p>
+          <p><img class="clock" src="C:\Users\roy\Desktop\Complete Web Developer Course\Portfolio\BBC Website\Images\timer.PNG"><span class="date border-right">11 September 2018</span><br><a class="technology no-border" href="">Technology</a></p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+  </html>
